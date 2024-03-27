@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 function Socials() {
     return (
 
-        <div className="flex flex-wrap items-center justify-center sm:gap-x-4 mt-28 md:w-[400px]">
+        <div className="flex flex-wrap sm:flex-nowrap items-center justify-center sm:gap-x-4 mt-28 md:w-[400px]">
             {socials.map((social) => (
                 <a
                     key={social.id}
