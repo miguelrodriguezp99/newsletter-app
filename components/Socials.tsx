@@ -3,13 +3,14 @@ import { SocialIcon } from "react-social-icons";
 
 function Socials() {
     return (
-        <div className="flex items-center justify-center sm:gap-x-4 mt-28 md:w-[400px]">
+
+        <div className="flex flex-wrap items-center justify-center sm:gap-x-4 mt-28 md:w-[400px]">
             {socials.map((social) => (
                 <a
                     key={social.id}
-                    className="flex items-center justify-center flex-1 animate-fade-in-3 
+                    className="flex items-center sm:justify-center flex-1 animate-fade-in-3 
                     cursor-pointer group md:hover:shadow-outline-gray rounded-[9px] 
-                    p-5 md:p-7 transition duration-200 ease-out"
+                    p-5 md:p-7 transition duration-200 ease-out ml-5 sm:ml-0"
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -31,6 +32,7 @@ function Socials() {
                 </a>
             ))}
         </div>
+
     );
 }
 
